@@ -1,0 +1,15 @@
+p{
+     margin: 1REM;
+     color: #FF0000;
+     border:5PX solid green;
+}
+table, td, thead,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+TD:hover{
+    background-color: RED;
+}
+img{
+    width:100px ;
+}
