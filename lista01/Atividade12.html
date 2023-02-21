@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(65, 65, 200);
+            color: #FFF;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+
+
+
+        }
+
+        header {
+            border-style: solid;
+            background-color: rgb(60, 6, 161);
+            margin-top: -7px;
+            width: 100%;
+            height: 2;
+
+        }
+
+        header,
+        h1,
+        em {
+            margin: 1x;
+            text-align: center;
+        }
+
+        pre {
+            line-height: 1.5;
+            margin-left: 10px;
+        }
+
+        section {
+            background-color: rgb(184, 208, 200);
+            padding: 10px;
+            text-align: justify;
+            line-height: 1.3;
+            padding-right: 50px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+
+        } th{
+            background-color: aquamarine;
+        }
+        tr{
+            background-color: aqua;
+        }
+
+        h2 {
+            margin-left: 20px;
+            ;
+        }
+
+        li {
+            margin-left: 1px;
+        }
+
+        ol {
+            margin-left: 5px;
+        }a{
+            margin-left: 20px;
+        }
+    </style>
+
+    <title>Minha página web</title>
+</head>
+
+<body>
+    <header>
+        <h1><em> Apresentação da minha página</em></h1>
+    </header>
+
+    <section>
+        <h2><strong>Atividade avaliativa de <sup>
+                    <font color="red"> Programação</font>
+                </sup> para internet do IFSC/Gaspar</strong></h2><br>
+
+        <li>1 Crie um documento HTML simples com um título e um parágrafo de texto.</li>
+        <a> A propria atividade</a>
+        <br>
+        <li>2Adicione um cabeçalho e um rodapé à sua página,(Não se preocupe com a posição neste momento)</li>
+         <a> A propria atividade</a>
+    
+        <li>3 Utilizando a tag para enfase, italico, negrito tachado, subescrito adicione esse recursos no texto da
+            sua página.</li>
+            <a> A propria atividade</a>
+        <br>
+        <li>4 Utilizando diferentes titulos de H1 a H6 crie diferentes tópicos na seu documento HTML</li>
+            <a> A propria atividade</a>
+        <li>5 Utilizando as tags de listagem &lt;li&gt &lt;ol&gt … , crie exemplos de listar ordenadas e não ordenadas.
+            <br><a> A propria atividade</a>
+        </li>
+        <li>6 Utilizando a tag &lta&gt crie links externos.</li>
+
+        <a href="https://github.com/eliezerdasilva/PPI-2023">Meu Repositório</a>
+        <ol> 7 Utilizando a tag &lta&gt e atributos de id nos itens do html, crie navegação interna a documento.</ol>
+        <a href="Atividade09.html">Atividade 09</a>
+        <ol> 8 Adicione imagens à sua página usando o elemento &ltimg&gt .</ol>
+        <ol> 9 Adicione uma descrição para imagem, para caso ela não possa ser carregada seja exibido o texto
+            alternativo. (alt)</ol>
+            <p><img src="../imagens/download.png" alt="HTML logo"></p>
+        <ol> 10 Adicione formulários à sua página usando os elementos &ltform&gt , &ltinput&gt , &ltlabel&gt e
+            &ltbutton&gt .</ol>
+        <br>
+
+        <form>
+            <p><label for="name">Informe seu nome:</label>
+                <input type="text" id="nome" name="nome" required minlength="4" maxlength="8" size="15"
+                    value="Nome Completo">
+            </p>
+            <p> <label for="cpf">Informe seu CPF</label>
+                <input id="cpf" type="cpf" value="xxx.xxx.xxx-xx" min="11" max="11" />
+            </p>
+            <button>Cadastrar</button>
+
+        </form>
+        <br>
+        <ol> 11Crie tabelas para exibir dados usando o elemento &lttable&gt .</ol>
+        <ol> 12Adicione tabelas com cabeçalhos de coluna e linha.</ol>
+        <table border="5">
+            
+            
+            <tr>
+                <th>id</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ELIEZER</td>
+                <td>4578451245-89</td>
+                <td>ELIE.s@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pedro</td>
+                <td>6456544564-45</td>
+                <td>pedro.s@gmail.com</td>
+            </tr>
+        </cor>
+        </table>
+        <ol> 13Adicione vídeos e áudios à sua página usando os elementos &ltvideo&gt e &ltaudio&gt .</ol>
+        <br>
+        <video controls width="350">
+            <source src="../imagens/video.mp4">
+
+        </video>
+        <br>
+        <audio
+        controls
+        src="../imagens/Gravação.m4a">
+            <a href="../imagens/Gravação.m4a">
+                Meu audio 
+            </a>
+        </audio>
+       
+
+    
+
+        <ol> 14 Crie uma lista não ordenada aninhada, com pelo menos 2 níveis de profundidade.</ol>
+        <ul>
+            <li>1 . Introdução</li>
+            <ul>
+                <li>1.1 Desenvolvimento</li>
+            </ul>
+           
+        </ul>
+        
+        
+    </section>
+    <footer>
+        <h1>Eliézer Da Silva</h1>
+    </footer>
+</body>
+
+</html>
