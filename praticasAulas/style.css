@@ -1,0 +1,51 @@
+span { 
+    color: red;
+}
+#p01{
+    color: aqua;
+}
+.p02{
+    color: brown;
+}
+#link1{
+    border: 3px solid black;
+    padding: 3px;
+    border-color:#009900;
+    box-shadow: 5px 5px 5px 5px #009900;
+    background-color: #00ff11;
+    border-radius: 20% 20% 20% 20%;
+    
+    
+}
+div{
+    display: inline-block;
+    padding: 20px;
+    border: 10px solid rgba(255,0,0,3);
+    margin: 30px;
+    border-radius: 100px;
+    line-height: 100px;
+    outline: 2px dotted red;
+    width: 100px;
+    height: 100px;
+    outline-offset:10px ;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(68, 68, 255);
+    background-size: 100% 100%;
+    background-image: url(../imagens/download.png);
+
+}
+p{
+    display: inline;
+}
+#div01{
+    outline: 2px dotted rgb(46, 31, 187);
+}
+#div02{
+    background-image: url(../imagens/download.png);
+
+}
+Seletetor {
+
+    propriedade: valor;
+}

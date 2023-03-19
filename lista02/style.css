@@ -1,0 +1,16 @@
+/* Atividade 01*/
+p{
+    color:green;
+}
+#p3{
+    color: blue;
+}
+.class1{
+    color:yellow;
+}
+#p3.class1{
+    color:orange;
+}
+body>h1{
+    color:maroon;
+}
