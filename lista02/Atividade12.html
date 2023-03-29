@@ -1,0 +1,51 @@
+<!--
+    Atividade 12) Um dos recursos mais interessantes do CSS é o uso e animações, leia sobre o assunto e recrie CSS do
+exemplo abaixo com o HTML definido a seguir. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin-right: 50px;
+            transition: all 1s;
+            cursor: pointer;
+
+        }
+
+        .square:hover {
+            transform: rotate(360deg);
+        }
+        .square:nth-child(1){
+            background-color: red;
+        }
+        .square:nth-child(2){
+            background-color: blue;
+        }
+        .square:nth-child(3){
+            background-color: green;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+</body>
+
+</html>

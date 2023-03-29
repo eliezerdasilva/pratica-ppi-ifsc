@@ -14,3 +14,49 @@ p{
 body>h1{
     color:maroon;
 }
+/* Atividade 02 e 03 */
+span{
+    border-radius: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+#primeira span:first-child:hover{
+    
+        background-color: red;
+}
+#segunda span:last-child:hover{
+    background-color: green;
+}
+#terceira span:nth-child(2):hover{
+    background-color: blue;
+}
+#quarta span:nth-child(5):hover{
+    background-color: palevioletred;
+}
+#quinta span:nth-child(odd):hover{
+background-color: yellow;
+}
+#sexta span:nth-child(2n):hover{
+    background-color: orange;
+}
+#setima span:nth-child(4):hover{
+    background-color: pink;
+}
+#oitava span:nth-child(3n + 2):hover{
+    background-color: brown;
+}
+#nona span:first-child:hover{
+    background-color: gray;
+}
+#nona span:nth-child(4):hover{
+    background-color: gray;
+}
+#decima span:nth-child(n  +4):hover{
+    background-color: purple;
+}
