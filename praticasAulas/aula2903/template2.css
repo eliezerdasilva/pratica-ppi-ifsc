@@ -1,0 +1,85 @@
+.header{
+   
+}
+.container{
+    border: 5px solid black;
+    display:grid;
+    height: 100vw;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1.5fr 0.50fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box6 box6 box6 box6 box6 box6"
+    "menu menu menu menu menu menu"
+    ". box1  box1 box1 box2 ."
+    ". box3 box3 box4 box4 ."
+    "box5 box5  box5 box5 box5 box5";
+    background-image: url(/imagens/2023-03-12.png);
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.menu{
+    grid-area: menu;
+    background-color: rgb(217, 138, 34);
+
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(123, 130, 83);
+    color: white;
+    font-size: 15pt;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+   
+
+grid-area: box1;    
+}
+
+.box2{
+    background-color: rgb(119, 31, 106);
+    justify-content: center;
+    align-items: center;
+ 
+    grid-area: box2;
+}
+
+.box3{
+    background-color: yellow;
+    
+    grid-area: box3;
+}
+
+.box4{
+    background-color: yellow;
+   
+    grid-area: box4;
+}
+.box5{
+    background-color: rgb(19, 19, 131);
+    grid-area: box5;
+}
+.box6{
+    background-color: blue;
+    grid-area: box6;
+    background-image: url(/imagens/download.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+
+}

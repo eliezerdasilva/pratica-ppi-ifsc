@@ -1,0 +1,41 @@
+.container{
+    display:grid;
+    height: 30vw;
+    grid-template-areas:
+    "box6 box6 box6 box6 "
+    "box1 box1 box1 box1"
+    "box2 box2 . box3"
+    
+    "box4 box4 box4 box4"
+
+}
+.box1{
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    grid-area: box1;    
+}
+
+.box2{
+    background-color: blue;
+    grid-area: box2;
+}
+
+.box3{
+    background-color: red;
+    grid-area: box3;
+}
+
+.box4{
+    background-color: blu;
+    grid-area: box4;
+}
+.box5{
+    background-color: blue;
+    grid-area: box5;
+}
+.box6{
+    background-color: green;
+    grid-area: box6;
+
+}
