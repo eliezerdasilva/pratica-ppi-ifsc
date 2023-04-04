@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.div1 {
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.div2 {
+    background-color: red;
+    width: 100%;
+    border: 2px solid black;
+}

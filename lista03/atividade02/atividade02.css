@@ -1,0 +1,15 @@
+.container{
+    height: 700px;
+    display: flex;
+}
+.coluna1{
+ 
+    color: red;
+
+   min-width: 300px;
+    background-color: aqua;
+}
+.coluna2{
+    width: 100%;
+    background-color: red;
+}

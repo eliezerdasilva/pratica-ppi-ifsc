@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+.coluna {
+    width: 25%;
+    background-color: blue;
+    text-align: center;
+ 
+}

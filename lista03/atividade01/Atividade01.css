@@ -1,0 +1,14 @@
+container{
+    display: flex;
+    
+}
+div{
+    height: 100px;
+    border: 2px solid black;
+    width: 100px;
+}
+span{
+    height: 100px;
+    border: 2px solid black;
+    width: 100px;
+}

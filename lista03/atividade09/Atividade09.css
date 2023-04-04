@@ -1,0 +1,26 @@
+.container_1{
+    display: flex;
+    height: 100px;
+    
+    justify-content: space-between;
+    
+}
+.container_2{
+    display: flex;
+    height: 100px;
+   
+    justify-content: space-around;
+    
+}
+.elemento-1{
+    width: 100px;
+    border: 2px solid black;
+}
+.elemento-2{
+    width: 100px;
+    border: 2px solid black;
+}
+.elemento-3{
+    width: 100px;
+    border: 2px solid black;
+}
