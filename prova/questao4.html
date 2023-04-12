@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            
+            margin: 5px;
+        }
+
+        .container {
+            width: 100vh;
+           height:  100vh;
+            display: inline-block;
+           
+        }
+
+        .bandeira {
+            display: inline-block;
+            width: 100%;
+            height: 100vh;
+            border: 2px solid black;
+           
+       
+            animation: rodaa 2s infinite;
+        }
+
+        .fundo {
+            position: relative;
+            background-color: red;
+            border:50px solid rgb(103, 9, 9);
+            border-top: 50px solid gold;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            animation: upDown 2s linear infinite;
+
+        }
+
+        @keyframes  roda{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes upDown{
+            0%{
+               top:0vh;
+            }
+            25%{
+                top:25vh;
+            }
+            50%{
+                top:50vh;
+            }
+            75%{
+                top:50vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Japao</h1>
+    <div class="bandeira">
+        <div class="fundo"></div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: auto;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.bandeira {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.fr{
+    display: flex;
+}
+.alemanha{
+    display: flex;
+}
+.linha1{  
+    background-color: black;
+}
+.linha2{background-color: red;}
+.linha3{
+    background-color: yellow;    }
+.fr1{
+    background-color: blue;
+}
+.fr2{
+    background-color: white;
+}
+.fr3{
+    background-color: red;
+}
+.bandeira>div{
+    width: 100%;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .title{
+            color: red;
+        }
+        #subTitle{
+            color: pink;
+        }
+        p{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: aquamarine;
+        }
+        p~p{
+            color: purple;
+        }
+        p:hover{
+            color: black;
+        }
+        #lorem1:hover{
+            color: antiquewhite;
+        }
+        #lorem2:before{
+            content: "(";
+        }
+        #lorem3:first-letter{
+            font-size: 30px;
+        }
+        #lorem4::selection{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Hello World!!</h1>
+    <h4 class="title">Titulo Secundario</h4>
+    <h6 id="subTitle">Subtitulo</h6>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, vel quo? Dolorem et sunt corporis voluptatum itaque eos minima, minus unde non reprehenderit cum recusandae esse ipsam facere, sapiente earum!</p>
+    <div>
+        <div>
+            <p id="lorem1">Lorem 1</p>
+            <p id="lorem2">Lorem 2</p>
+            <hr>
+            <p id="lorem3">Lorem 3</p>
+            <p id="lorem4">Lorem 4</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

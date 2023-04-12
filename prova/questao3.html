@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #centro{
+            border: 2px solid black;
+            height: 200px;
+            width: 300px;
+        }
+        #centro>*{
+            margin: 20px;
+        }
+       
+        body{
+            height: 100vw;
+        }
+        button:hover{
+            
+            background-color: green;
+      
+        }
+        input::selection{
+            background-color: aqua;
+            width: 90px;
+        }
+    </style>
+</head>
+<body class="container">
+    <fieldset id=centro>
+        <legend>Login</legend>
+        <div>
+            Login:  <input type="text" name="" id="">
+        </div>
+        <div>
+            Senha:  <input type="password" name="" id="">
+        </div>
+        <div class="botoes">
+            <button>Enviar</button>
+            <button>Limpar</button>
+        </div>
+    </fieldset>
+</body>
+</html>

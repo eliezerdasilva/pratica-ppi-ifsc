@@ -1,0 +1,14 @@
+Explique com suas palavra o que é web e internet, requisição http 
+
+Internet: Uma rede de computadores que interconecta computadores globalmente.
+
+Web: A web é um serviço de provimento de documentos e páginas sobre a internet, documentos estes com referencias(links) de documentos.
+
+HTTP: É um protocolo HTTP é texto utilizado para troca de mensagens entre cliente e serviço web.
+
+requisição: requisição é a ação de solicitar algo, no contexto do protocolo HTTP requisição é uma mensagem enviada 
+pelo cliente informando ao servidor a natureza da solicitação de documentos e contento dados preenchidos pelo usuário ou documento HTML.
+Toda requisição é processada pelo servidor que emite uma resposta HTTP response, nesta é incluindo como o conteúdo o resultado do processamento
+da requisição bem com um código que informa o status do processamento da requisição.
+
+Explique o que são seletores CSS  e de forma prática exemplifique os diferentes tipos de seletores. 
