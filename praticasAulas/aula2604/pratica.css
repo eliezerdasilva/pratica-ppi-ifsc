@@ -1,0 +1,14 @@
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.centro{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
