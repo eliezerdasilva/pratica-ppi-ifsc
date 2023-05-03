@@ -1,0 +1,50 @@
+Questão 2
+
+O JS quando executado em um navegador possui algumas variáveis de ambiente que dão
+acesso ao recursos, explique e apresente um exemplo dos recursos window, document,
+location, history evidenciando principais funções e propriedades de cada um deles
+
+Resposta: 
+
+WINDOW representa a janela do navegador no qual está sendo exibindo a página da web. 
+
+
+Suas principais propriedades são: 
+
+window, .innerWidth e innerHeight: Retornam a dimensão da area de visualização da página. 
+
+location: Informa  a localização da página atual.
+
+alert: Exibe a caixa de diálogo.
+
+
+DOCUMENT é o conteúdo que compõem a tela. 
+
+
+propriedades: 
+
+.getElementById(): Retorna o Id do Componente.
+
+.createElement(): Cria um novo elemento. 
+
+
+LOCATION é a localização em que a página está. 
+
+
+propriedades: 
+
+.href: Retorna a URL atual da página.
+
+.reload(): Recarrega o conteúdo da página.
+
+.replace(): Executa uma nova URL. 
+
+
+HISTORY, como o próprio nome diz, retorna o histórico de navegação 
+
+propriedades: 
+
+.length: Retorna a quantidade de página. 
+
+.back(): Retorna a página anterior da navegação.
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array de Elementos</title>
+    <style>
+        body {
+            margin: 10;
+            padding: 10;
+            background-color: #3030b0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        form {
+            margin-left: 750px;
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s;
+            margin-bottom: 20px;
+            width: 100px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            height: 15px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Array de Elementos</h1>
+    <form>
+        <label for="elemento">Digite um elemento:</label>
+        <input type="text" id="elemento" placeholder="Digite um elemento...">
+        <button type="button" onclick="adicionarElemento()">Adicionar</button>
+        <button class="delete-button" onclick="excluirElemento(event)">Excluir</button>
+
+    </form>
+    <ul id="listaElementos"></ul>
+
+    <script src="Atividade.js"></script>
+</body>
+
+</html>
