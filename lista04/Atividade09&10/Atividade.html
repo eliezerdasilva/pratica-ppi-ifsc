@@ -41,7 +41,8 @@
             padding: 0;
             margin: 0;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
         }
@@ -67,7 +68,7 @@
     <form>
         <label for="elemento">Digite um elemento:</label>
         <input type="text" id="elemento" placeholder="Digite um elemento...">
-        <button type="button" onclick="adicionarElemento()">Adicionar</button>
+        <button type="button" onclick="adicionarElemento(this)">Adicionar</button>
         <button class="delete-button" onclick="excluirElemento(event)">Excluir</button>
 
     </form>
