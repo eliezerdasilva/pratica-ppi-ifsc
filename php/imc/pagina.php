@@ -1,0 +1,1 @@
+<?php echo ($_GET["nome"]),($_GET["email"]) ;?>
