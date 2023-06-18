@@ -1,16 +1,12 @@
 <?php
 function  conectaBD(){
-    try{
-    $con = new PDO("mysql:host=127.0.0.1:3307;dbname=crudphp","","");
+    $con = new PDO("mysql:host=localhost;dbname=web","root","root");
     return $con;
-    }catch (PDOException $e){
-        echo "ERRO, banco não conectado";
-    }
 }
 function insereUsuario($nome,$email,$senha){
     $con = conectaBD();
     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    try{$sql = "Insert into pessoa (nome,email,senha) values (?,?,?)";
+    try{$sql = "Insert into usuario (nome,email,senha) values (?,?,?)";
     $stm=$con->prepare($sql);
     $stm->bindParam(1,$nome);
     $stm->bindParam(2,$email);
@@ -23,7 +19,7 @@ function insereUsuario($nome,$email,$senha){
 }
 function deletaUsuario($id){
     $con= conectaBD();
-    $sql = "DELETA from pessoa where id=?";
+    $sql = "DELETA from usuario where id=?";
     try{
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stm=$con->prepare($sql);
@@ -36,7 +32,7 @@ function deletaUsuario($id){
 }
 function recuperarUSuario($id){
     $con = conectaBD();
-    $sql = "SELECT * From pessoa where id =?";
+    $sql = "SELECT * From usuario where id =?";
     $stm=$con->prepare($sql);
     $stm->bindParam(1,$id);
     $stm->execute();
@@ -45,7 +41,7 @@ function recuperarUSuario($id){
 }
 function recuperaAll(){
     $con = conectaBD();
-    $sql = "SELECT * From pessoa";
+    $sql = "SELECT * From usuario";
     $stm=$con->prepare($sql);
     $stm->bindParam(1,$id);
     $stm->execute();
