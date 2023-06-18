@@ -1,13 +1,16 @@
 <?php
-$hostname = "localhost:3307";
-$bancodedados = "login";
-$usuario = "root";
-$senha = "root";
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
-if ($mysqli->connect_errno) {
-    echo "ERRO NA CONEXAO";
-} else {
-    echo "conectado";
+function conectaBD()
+{
+    try {
+        $hostname = "127.0.0.1:3307";
+        $bancodedados = "crudphp";
+        $usuario = "root";
+        $senha = "";
+        $con = new PDO("mysql:host=127.0.0.1:3307;dbname=crudphp", $usuario, $senha);
+        return $con;
+    } catch (PDOException $e) {
+        echo "ERRO, banco não conectado";
+    }
 }
 ?>

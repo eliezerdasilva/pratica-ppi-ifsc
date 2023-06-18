@@ -17,6 +17,12 @@ body{
     color:white;
    
 }
+.borda-vermelha {
+    border: 1px solid red;
+}
+.erro {
+    color: red;
+}
 input{
     display: flex;
     flex-direction: column;
