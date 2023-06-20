@@ -1,0 +1,104 @@
+
+body{
+	background-image: linear-gradient(45deg, blue , cyan );
+	
+
+  }
+  
+
+
+
+
+  .form{
+	display: flex;
+	gap: 20px;
+  }
+ 
+
+  .campos{
+	width: 200px;
+  }
+
+.dois{
+	display: flex;
+	flex-direction: column;
+
+  }
+.text-center{
+	color:rgb(0, 0, 0);	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+
+
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    border-radius: 41px;
+	background-image: linear-gradient(45deg, blue , cyan );
+	padding: 70px 80px 60px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:18px;
+	color:rgb(0, 0, 0);	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:18px;
+  color:rgb(0, 0, 0);
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid rgb(78, 75, 255);	
+}
+.btn{
+
+	background-color:rgb(0, 0, 0);
+	outline: none;
+    border: 0;
+	padding: 10px 20px;
+	text-transform:uppercase;
+	margin-top: 10px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	cursor:pointer;
+	position:relative;
+}
+.btn:hover{
+	color: rgb(47, 241, 255);
+}
+.link{
+	text-decoration:none;
+	color: blue;
+}
+.link:hover{
+
+	background-image: linear-gradient(45deg, blue , cyan );
+}
+.txtL{
+	margin-top: 15px;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}

@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="button.css">
    
     <title>Document</title>
+    <style>
+    body {
+        background-image: linear-gradient(45deg, blue , cyan );
+        height: 100vh; 
+    width: 100vw; 
+    margin: 0; 
+    }
+</style>
 </head>
 
 <body>
@@ -18,11 +26,12 @@
 <header>
       <menu>
         <ul>
+        <li><a class="link" href="cadastro.html">Cadastrar</a></li>
             <li><a class="link" href="home.php">Home</a></li>
             
             <li><a class="link"  href="sobre.php">Sobre</a></li>
             
-            <li><a class="link"  href="logoff.php">Logout</a></li>
+            <li><a class="link"  href="sair.php">Logout</a></li>
             
         </ul>
     </menu>
@@ -32,7 +41,7 @@
 
 
 
-    <h2>Usuários</h2>
+    <h2>Cadastrados</h2>
     
     <table class='tabela'>
     <form method="GET" action="search.php" >
@@ -42,9 +51,6 @@
             <input name="pesquisa" placeholder="Digite o nome" class="input" type="text">
             <div type="submit" class="search-box-icon">
                 <button class="btn-icon-content">
-                <i class="search-icon">
-                    <svg xmlns="://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="#fff"></path></svg>
-                </i>
                 </button>
             </div>
             </div>
@@ -60,7 +66,7 @@
             <th></th>
         </tr>
         <?php
-include_once "db.php";
+include_once "conexao.php";
 session_start();
 if (!isset($_SESSION['email'])) {
     header('Location: login.php');
@@ -95,7 +101,7 @@ if (isset($_SESSION['resultado'])) {
     if (!empty($resultado)) {
         // A função retornou resultados
         foreach ($resultado as $row) {
-            $dataFormatada = date_create_from_format('Y-m-d', $row['data_Nascimento'])->format('d/m/Y');
+            $dataFormatada = date_create_from_format('Y-m-d', $row['data_nascimento'])->format('d/m/Y');
             echo "<tr>";
             echo "<td>" . $row['nome'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
