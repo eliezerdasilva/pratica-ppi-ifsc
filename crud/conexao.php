@@ -19,7 +19,7 @@ function deletaUsuario($id){
     }
 }
 
-function insereUsuario ($nome,$email,$senha,$dataFormatada,$tele){
+function insereUsuario ($nome,$email,$senha,$dataFormatada,$telefone){
     try{
         $con=conectaBD();
 
@@ -31,7 +31,7 @@ function insereUsuario ($nome,$email,$senha,$dataFormatada,$tele){
     $stm->bindParam(2,$email);
     $stm->bindParam(3,$senha);
     $stm->bindParam(4,$dataFormatada);
-    $stm->bindParam(5,$tele);
+    $stm->bindParam(5,$telefone);
     $stm->execute();
     
     } catch(PDOExeption $e) {
@@ -42,7 +42,7 @@ function insereUsuario ($nome,$email,$senha,$dataFormatada,$tele){
     return $con->lastInsertId();
 }
 
-function atualizaUsuario($id, $nome, $email, $senha ,$dataFormatada, $tele) {
+function atualizaUsuario($id, $nome, $email, $senha ,$dataFormatada, $telefone) {
     $con = conectaBD();
     $sql = "UPDATE usuarios SET nome = ?, email = ?, senha = ?, data_nascimento = ?, telefone = ? WHERE id = ?";
     try {
@@ -52,7 +52,7 @@ function atualizaUsuario($id, $nome, $email, $senha ,$dataFormatada, $tele) {
         $stm->bindParam(2, $email);
         $stm->bindParam(3, $senha);
         $stm->bindParam(4,$dataFormatada);
-        $stm->bindParam(5,$tele);
+        $stm->bindParam(5,$telefone);
         $stm->bindParam(6, $id);
         $stm->execute();
         
