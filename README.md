@@ -1,6 +1,6 @@
 # PPI-2023 | Programação para Internet- IFSC
 
-### **Descricao** '
+### **Descricao** 
 
     Prática realizada na Matéria Programação para internet, reverente ao curso técnico em Informática pelo IFSC.
 
